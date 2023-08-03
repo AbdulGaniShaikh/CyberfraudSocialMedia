@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cyber Fraud Social Media</string>
+    <string name="verificationDialog">An email has been sent to your email address containing an activation link. Please click on the link to activate your account.</string>
+    <string name="def">Cyber fraud is the crime committed via a computer with the intent to corrupt another individual\'s personal and financial information stored online. Cyber fraud is the most common type of fraud and individuals and organisations need to be vigilant and protect their information from fraudsters.</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfile"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_app_512"
+            android:layout_marginVertical="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/top_shadow_gradient"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/top_shadow_gradient"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/layout_divider"/>
+    <!--    <TextView-->
+    <!--        android:id="@+id/change_avatar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:text="Change Avatar"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        app:drawableEndCompat="@drawable/ic_baseline_edit_24"-->
+    <!--        android:layout_margin="15dp"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/top_shadow_gradient"/>
+    <TextView
+        android:id="@+id/resettxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="Reset Password"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:drawableEndCompat="@drawable/resetpass"
+        android:layout_margin="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/layout_divider"/>
+    <TextView
+        android:id="@+id/logouttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="Sign Out"
+        android:textSize="18sp"
+        android:textColor="@color/purple_500"
+        app:drawableEndCompat="@drawable/logout"
+        android:layout_margin="15dp"/>
+</LinearLayout>

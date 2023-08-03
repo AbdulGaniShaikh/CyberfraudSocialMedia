@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCreatePost">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/create_post_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_close"
+            android:background="@android:color/transparent"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share post"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_above="@+id/attachandsend">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/create_post_dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_app_32"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/create_post_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Shaikh Abdul Gani"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/create_post_img"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_app_512"
+                android:background="@color/browser_actions_bg_grey"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/create_post_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:hint="What do you to talk about?"
+                android:textColor="@color/black"
+                android:background="@null"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/attachandsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/create_post_attach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attach Image"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/create_post_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Post"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:enabled="false"/>
+    </LinearLayout>
+</RelativeLayout>

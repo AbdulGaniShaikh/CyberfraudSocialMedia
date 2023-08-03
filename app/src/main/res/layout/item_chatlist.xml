@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="5dp"
+    android:id="@+id/chatlist_container">
+
+    <me.fahmisdk6.avatarview.AvatarView
+        android:id="@+id/chatlist_dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:avBgTextColor="@color/primaryColor"
+        app:avCornerRadius="50dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingHorizontal="10dp">
+        <TextView
+            android:id="@+id/chatlist_topicname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/chatlist_lm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatlist_topicname"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Last message"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

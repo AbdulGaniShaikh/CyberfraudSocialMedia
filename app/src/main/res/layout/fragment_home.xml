@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome" >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navigationIcon="@drawable/icon_app_32"
+                app:contentInsetStartWithNavigation="0dp"
+                app:title="@string/app_name"
+                app:titleTextColor="@color/primaryDarkColor" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            >
+            <EditText
+                android:id="@+id/search_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search tags..."
+                android:background="@drawable/search_border"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:inputType="text"
+                android:drawableEnd="@drawable/icon_search"
+                android:importantForAutofill="no"
+android:layout_marginHorizontal="10dp"
+                android:textCursorDrawable="@drawable/black_cursor"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/home_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="20dp"
+            android:src="@drawable/icon_pencil"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/app_name" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

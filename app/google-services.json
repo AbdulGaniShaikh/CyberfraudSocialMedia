@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620820722587",
+    "project_id": "cyber-fraud-social-media",
+    "storage_bucket": "cyber-fraud-social-media.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620820722587:android:cafe38bde7f3532bd1a73e",
+        "android_client_info": {
+          "package_name": "com.miniproject.cyberfraudsocialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620820722587-8bk90dsocggvtn9affjo3cevtobdr95e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1-BsfSJAIk5S-72CJoCG2ppyIuZBX05M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620820722587-8bk90dsocggvtn9affjo3cevtobdr95e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

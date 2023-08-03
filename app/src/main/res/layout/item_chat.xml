@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLength="20"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:50 AM, 9 July"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/chat_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hii welcome to cyber security social media"
+        android:padding="3dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:background="@color/browser_actions_bg_grey"/>
+
+</LinearLayout>
